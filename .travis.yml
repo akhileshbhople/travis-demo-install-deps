@@ -1,0 +1,20 @@
+language: minimal
+
+os: linux
+
+dist: xenial
+
+addons:
+  apt:
+    update: true
+    packages:
+      - curl
+      - tar
+      - cmake
+      - time
+
+script: 
+  - curl -v
+  - tar -v
+  - cmake -v
+  - time -v
