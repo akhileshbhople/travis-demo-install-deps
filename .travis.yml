@@ -9,12 +9,8 @@ addons:
     update: true
     packages:
       - curl
-      - tar
       - cmake
-      - time
 
-script: 
-  - curl -v
-  - tar -v
-  - cmake -v
-  - time -v
+script:
+  - curl --version
+  - cmake --version
